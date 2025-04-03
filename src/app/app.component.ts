@@ -1,17 +1,16 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { Flight } from './models/flight';
-import {OfferCardComponent} from './components/offer-card/offer-card.component';
-import {AsyncPipe, CommonModule, CurrencyPipe} from '@angular/common';
+import {HeaderComponent} from './component/header/header.component';
+import {CarouselComponent} from './component/carousel/carousel.component';
+import {FooterComponent} from './component/footer/footer.component';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, OfferCardComponent, AsyncPipe, CurrencyPipe, CommonModule],
+  standalone: true,
+  imports: [RouterOutlet, HeaderComponent, CarouselComponent, FooterComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
 export class AppComponent {
+  title = 'jetsetgo-angular';
 }
-
-
-
