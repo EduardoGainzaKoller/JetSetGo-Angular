@@ -1,0 +1,8 @@
+.carousel-item img {
+  max-height: 50vh;
+  object-fit: cover;
+}
+
+.container-fluid {
+  padding: 0;
+}
